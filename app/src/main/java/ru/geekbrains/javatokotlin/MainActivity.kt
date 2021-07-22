@@ -21,10 +21,12 @@ class MainActivity : AppCompatActivity() {
         recyclerWeather.adapter = adapter
 
         val button = findViewById<Button>(R.id.button)
-        button.setOnClickListener(object: View.OnClickListener{
-            override fun onClick(v: View?) {
-                Toast.makeText(this@MainActivity, "Нажата кнопка", Toast.LENGTH_SHORT).show()
-            }
-        })
+        button.setOnClickListener {
+            Toast.makeText(
+                this@MainActivity,
+                "Нажата кнопка",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
     }
 }

@@ -22,10 +22,60 @@ data class Weather(var town: String = "My Town", var temperature: Int = 10) {
         }
 
     fun registrator(vararg strings: String): Unit {
-        val a = if (strings[0] == "get") {
+        var a = if (strings[0] == "get") {
             "get"
         } else {
             "set"
+        }
+
+        if (strings[0] == "get"){
+            a = "get"
+        }
+
+        val i = 10
+
+        when(i){
+            1 -> {
+                TODO("1")
+            }
+            2 -> {
+                TODO("2")
+            }
+            else ->{
+                TODO("else")
+            }
+        }
+
+        when{
+            i < 10 -> {
+                TODO("<10")
+            }
+            i == 10 -> {
+                TODO("==10")
+            }
+            i > 10 -> {
+                TODO(">10")
+            }
+        }
+
+        var weather = Weather()
+        when(weather){
+            is Weather -> {
+                TODO("weather")
+            }
+            else -> {
+                TODO("esle")
+            }
+        }
+
+        var b = when(i){
+            5 -> "пять"
+            6 -> "шесть"
+            else -> "это другое"
+        }
+
+        for(i in 0 until 10){
+            
         }
 
         for((index, myVar) in strings.withIndex()){
