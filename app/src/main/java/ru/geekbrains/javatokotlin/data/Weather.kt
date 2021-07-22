@@ -74,8 +74,12 @@ data class Weather(var town: String = "My Town", var temperature: Int = 10) {
             else -> "это другое"
         }
 
+        for(i in 0..9){
+
+        }
+
         for(i in 0 until 10){
-            
+
         }
 
         for((index, myVar) in strings.withIndex()){
