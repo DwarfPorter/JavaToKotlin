@@ -38,4 +38,12 @@ class WeatherAdapter(private val repository: IRepository) :
     override fun getItemCount(): Int {
         return repository.getWeathers().size
     }
+
+    companion object {
+        private val ZeroTemp: Int = 0
+
+        fun getInstance(repository: IRepository): WeatherAdapter{
+            return WeatherAdapter(repository)
+        }
+    }
 }
